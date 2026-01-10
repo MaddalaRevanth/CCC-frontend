@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Advice Generator App</title>
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <article class="card">
+
+      <p class="advice-id">
+        ADVICE #<span id="advice-id">---</span>
+      </p>
+
+      <h1 class="advice-text" id="advice-text">
+        Loading advice...
+      </h1>
+
+      <picture class="divider">
+        <source media="(max-width: 600px)" srcset="images/pattern-divider-mobile.svg">
+        <img src="images/pattern-divider-desktop.svg" alt="divider">
+      </picture>
+
+      <button class="dice-btn" id="dice-btn" aria-label="Generate advice">
+        <img src="images/icon-dice.svg" alt="dice icon">
+      </button>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
